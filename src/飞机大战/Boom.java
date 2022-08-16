@@ -18,17 +18,18 @@ public class Boom {
            img[i].getHeight(null);
         }
     }
-    int count =0;
+    int count =1;
     boolean live=true;
     public void draw(Graphics g){
-        if (!live){
-            return;
-        }
-        if (count<16){
+
+        if (count<=16){
             g.drawImage(img[count], (int) x, (int) y,null);
             count++;
         }else {
             live=false;
+        }
+        if (!live){
+            return;
         }
     }
 

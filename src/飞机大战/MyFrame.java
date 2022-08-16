@@ -63,8 +63,6 @@ public class MyFrame extends Frame {
         if(!p.live){
             printInfor(g,"YOU LOSE!!",50,900,500,Color.WHITE);
             printInfor(g,"坚持了"+period+"秒",50,900,550,Color.WHITE);
-            p=null;
-            System.gc();
         }
 
 
