@@ -44,7 +44,9 @@ public class Plane extends GameObject{
 
 
     @Override
+
     public void drawMySelf(Graphics g) {
+        if(!live){return;}
         super.drawMySelf(g);
 
         if (left){
