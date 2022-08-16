@@ -56,7 +56,6 @@ public class MyFrame extends Frame {
                 period = (end-start)/1000;      //计算游戏时间
                 boom=new Boom(p.x,p.y);      //创建爆炸对象
                 boom.draw(g);       //实现爆炸轮播图效果
-
             }
         }
         //打印 爆炸之后的文字
@@ -64,8 +63,6 @@ public class MyFrame extends Frame {
             printInfor(g,"YOU LOSE!!",50,900,500,Color.WHITE);
             printInfor(g,"坚持了"+period+"秒",50,900,550,Color.WHITE);
         }
-
-
     }
 
     public void printInfor(Graphics g,String str,int size,int x,int y,Color c){

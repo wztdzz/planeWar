@@ -10,27 +10,30 @@ public class Boom {
     }
 
     double x,y;
-    static Image[] img = new Image[16];
+    static Image[] img = new Image[30];
     static {
-        for (int i = 0; i < 16; i++) {
+        for (int i = 0; i < 30; i++) {
             img[i]= Util.getImage("images/boom/"+(i+1)+".gif");
             //防止懒加载
            img[i].getHeight(null);
         }
     }
-    int count =1;
-    boolean live=true;
-    public void draw(Graphics g){
 
-        if (count<=16){
+    public void draw(Graphics g){
+        int count =1;
+        boolean a =true;
+
+
+        if (!a){
+         return;
+        }
+
+        if (count <=30 ) {
             g.drawImage(img[count], (int) x, (int) y,null);
-            count++;
         }else {
-            live=false;
+                a=false;
         }
-        if (!live){
-            return;
-        }
+
     }
 
 }

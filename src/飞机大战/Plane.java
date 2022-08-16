@@ -44,7 +44,6 @@ public class Plane extends GameObject{
 
 
     @Override
-
     public void drawMySelf(Graphics g) {
         if(!live){return;}
         super.drawMySelf(g);
@@ -62,6 +61,7 @@ public class Plane extends GameObject{
             y+=speed;
         }
     }
+
 
     public Plane(Image img, int x, int y, int speed) {
         super(img, x, y, speed);
